@@ -1,0 +1,92 @@
+.nav-section {
+  display: flex;
+  justify-content: space-between; /* Spreads the three main groups apart */
+  align-items: center;           /* Centers everything vertically */
+  padding: 10px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* --- Search Bar Styling --- */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 20px;
+  width: 300px; /* Adjust based on your preference */
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+/* --- Right Side Actions --- */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between links and button */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px; /* Space between individual links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e53935;
+  font-weight: 500;
+}
+
+/* --- Cookbook Button --- */
+.cookbook-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e53935; /* Matching the red/orange in the image */
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cookbook{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white; /* Matching the red/orange in the image */
+  color: #e53935;
+  border: 1px solid #e53935;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.cookbook-btn:hover {
+  background-color: #c62828;
+  transition: all 0.3s ease;
+}
+
+.cookbook:hover {
+  background-color: #c62828;
+  border: 1px solid #c62828;
+  color: white;
+  transition: all 0.3s ease;
+}
+.logo{
+    color: #e53935;
+    font-style: italic;
+}
+.nav-section .button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

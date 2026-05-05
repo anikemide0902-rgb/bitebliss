@@ -1,0 +1,44 @@
+.card{
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+}
+.card:hover{
+    cursor: pointer;
+    transition: all ease 0.5s;
+    transform: scale(1.1);
+}
+.meal{
+    margin: 50px;
+}
+ .left, .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+.ingred{
+   font-size:.8rem;
+   color: #e53935;
+}
+.details{
+    margin: 10px;
+    width: 80%;
+}
+.details h2{
+    font-size: 1.2rem;
+    color: #e53935;
+}
+.card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.wrapper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.preparation p{
+    color: #e53935;
+}

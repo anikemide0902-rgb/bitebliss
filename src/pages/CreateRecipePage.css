@@ -1,0 +1,82 @@
+/* Page container */
+.create-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  padding-right: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../assets/food2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+.create-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e53935;
+}
+
+/* Form layout */
+.create-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs & textarea */
+.create-page input,
+.create-page textarea,
+.create-page select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+/* Focus effect */
+.create-page input:focus,
+.create-page textarea:focus,
+.create-page select:focus {
+  outline: none;
+  border-color: #e53935;
+}
+
+/* Error text */
+.create-page p {
+  color: #c62828;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Button */
+.create-page button {
+  padding: 12px;
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+.create-page button:hover {
+  background: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .create-page {
+    margin: 20px;
+    padding: 15px;
+  }
+}

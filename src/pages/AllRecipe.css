@@ -1,0 +1,230 @@
+/* Page wrapper */
+.recipes-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.recipes-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.recipes-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e53935;
+  margin: 0;
+}
+
+.recipes-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Search and add button */
+.recipes-controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.recipes-search {
+  position: relative;
+  flex-grow: 1;
+}
+
+.recipes-search input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.recipes-search svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* Add recipe button */
+.add-recipe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background-color: #e53935;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.add-recipe-button:hover {
+  background-color: #c62828;
+}
+
+/* Recipes grid */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual recipe card */
+.recipe-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Recipe image */
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Recipe content */
+/* .recipe-content {
+  padding: 16px;
+}
+.recipe-content .recipe-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.recipe-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.recipe-title h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.recipe-category {
+  background-color: #f3f4f6;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #4b5563;
+}
+
+/* Cooking time */
+/* .recipe-time {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* View recipe button */
+/* .view-recipe {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #e53935;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.view-recipe:hover {
+  background-color: #c62828;
+  color: #ffffff;
+}  */
+
+
+.recipes-grid .recipe-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.recipe-title h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e53935;
+  margin: 0;
+  text-transform: capitalize;
+  display: flex;
+}
+.recipe-type{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recipe-type span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #6b7280;
+}
+.recipe-content button{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #e53935;
+  border: 1px solid #e53935;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.recipe-content button:hover {
+  background-color: #c62828;
+}
+.recipe-content .view-recipe {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* No recipes found */
+.no-recipes {
+  text-align: center;
+  padding: 60px 20px;
+  color: #e53935;
+}
+
+.no-recipes h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e53935;
+  margin-bottom: 8px;
+}
+
+.no-recipes p {
+  margin: 0;
+  font-size: 14px;
+}
